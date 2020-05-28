@@ -1,0 +1,30 @@
+$fontSizeM: 18px;
+$fontSizeL: 22px;
+$fontSizeXL: 30px;
+$fontSize2XL: 45px;
+$fontSize4XL: 108px;
+
+@mixin fontSizeL {
+  font-size: $fontSizeL;
+}
+@mixin fontSize2XL {
+  font-size: $fontSize2XL;
+}
+@mixin fontSizeXL {
+  font-size: $fontSizeXL;
+}
+@mixin fontSize4XL {
+  font-size: $fontSize4XL;
+  @media screen and (max-width: 1200px) {
+    font-size: 9vw;
+  }
+}
+
+@mixin fontSizeM {
+  font-size: $fontSizeM;
+  font-weight: 300;
+}
+@mixin fontSizeMFat {
+  @include fontSizeM;
+  font-weight: 800;
+}

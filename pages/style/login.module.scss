@@ -1,0 +1,41 @@
+@import '../../base/index.scss';
+.root {
+  // background-image: url('https://lh3.googleusercontent.com/proxy/6DS8puQuGkLN1Etmy83BeLkn1rMrUOH2xFn85lBNmWeiClUgBQlBZRkXwrjHwlUM29qMYRk1QWzHB6K1eWdd1vAE');
+
+  background-image: linear-gradient(rgb(238, 102, 222), rgb(136, 34, 133));
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: 50% 80%;
+
+  min-height: 100vh;
+
+  .loginWrapper {
+    padding-top: 20vh;
+    max-width: $maxWidth;
+    margin: auto;
+    height: 60vh;
+    position: relative;
+
+    h1 {
+      color: #fff;
+      // font-size: ;
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .login {
+        @include borderButton(#fff, 10px);
+        @include fontSizeXL;
+        color: $colorWhite;
+        height: $mn;
+        width: 40%;
+      }
+    }
+  }
+}

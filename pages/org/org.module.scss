@@ -1,0 +1,16 @@
+@import '../../base/index.scss';
+
+.root {
+  background-image: linear-gradient(rgb(222, 222, 222), rgb(140, 140, 140));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .orgWrapper {
+    padding-top: 10vh;
+    max-width: $maxWidth;
+    margin: auto;
+    // height: 60vh;
+    position: relative;
+  }
+}

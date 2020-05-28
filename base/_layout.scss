@@ -1,0 +1,7 @@
+$maxWidth: 1000px;
+
+@mixin borderButton($color: #fff, $radius: 2px) {
+  background: none;
+  border: 2px solid $color;
+  border-radius: $radius;
+}
